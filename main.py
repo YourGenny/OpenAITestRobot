@@ -3,9 +3,13 @@ from pyrogram import Client
 from pyrogram.idle import idle
 from config import BOT_TOKEN, API_ID, API_HASH, SESSION_STRING
 from vc import assistant, pytgcalls
-import handlers.play  # import all handlers
+
+# Import all handlers
+import handlers.play
 import handlers.pause
-# import other handlers similarly
+import handlers.resume
+import handlers.skip
+import handlers.stop
 
 app = Client("bot", bot_token=BOT_TOKEN, api_id=API_ID, api_hash=API_HASH)
 
